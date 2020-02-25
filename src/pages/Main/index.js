@@ -21,6 +21,11 @@ import {
 } from './styles';
 
 export default class Main extends Component {
+
+  static navigationOptions = {
+    title: 'Usuários',
+  }
+
   state = {
     newUser: '',
     users: [],
@@ -114,7 +119,5 @@ export default class Main extends Component {
 };
 
 
-Main.navigationOptions = {
-  title: 'Usuários',
-}
+
 
