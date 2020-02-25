@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-type';
 import { Keyboard, ActivityIndicator } from 'react-native';
 import { View } from 'react-native';
 import api from '../../services/api';
