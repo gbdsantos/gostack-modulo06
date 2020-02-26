@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-type';
+import PropTypes from 'prop-types';
 import { Keyboard, ActivityIndicator } from 'react-native';
 import { View } from 'react-native';
 import api from '../../services/api';
@@ -21,9 +21,14 @@ import {
 } from './styles';
 
 export default class Main extends Component {
-
   static navigationOptions = {
     title: 'Usuários',
+  }
+
+  static propTypes = {
+    navigation: PropTypes.shape({
+      navigate: PropTypes.func,
+    }).isRequired,
   }
 
   state = {
